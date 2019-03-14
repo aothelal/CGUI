@@ -14,6 +14,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CGUI.Controls;
+using CGUtilities;
+using CGUtilities.StructureTranslator;
+using Microsoft.Win32;
 
 namespace CGUI
 {
@@ -74,6 +78,9 @@ namespace CGUI
             if (this.algorithmList.SelectedIndex == 0)
             {
                 this.resultCanvas.Visibility = System.Windows.Visibility.Collapsed;
+                this.loadButton.IsEnabled = true;
+                this.saveButton.IsEnabled = true;
+                this.undoButton.IsEnabled = true;
             }
             else
             {
@@ -104,9 +111,66 @@ namespace CGUI
                 {
                     this.resultCanvas.Lines.Add(item);
                 }
+                this.loadButton.IsEnabled = false;
+                this.saveButton.IsEnabled = false;
+                this.undoButton.IsEnabled = false;
             }
 
             this.drawingCanvas.Focus();
+        }
+
+        private void saveButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog _dialog = new SaveFileDialog();
+            _dialog.FileName = "*.cgds";
+            _dialog.ShowDialog(this);
+            PointCollectionTranslator pointsTranslator = new PointCollectionTranslator();
+            LineCollectionTranslator linesTranslator = new LineCollectionTranslator();
+            PolygonCollectionTranslator polygonsTranslator = new PolygonCollectionTranslator();
+            FileHelper.Save(_dialog.FileName, pointsTranslator.Encode<CGUtilities.Point>(drawingCanvas.Points.ToList()) + linesTranslator.Encode<CGUtilities.Line>(drawingCanvas.Lines.ToList()) + polygonsTranslator.Encode<CGUtilities.Polygon>(drawingCanvas.Polygons.ToList()));
+        }
+
+        private void LoadButton_OnClickButton_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog _dialog = new OpenFileDialog();
+            _dialog.Multiselect = false;
+            _dialog.Filter = "Computational Geometry Dataset|*.cgds";
+            _dialog.ShowDialog(this);
+            string content = FileHelper.Load(_dialog.FileName);
+
+            if (content.Equals(String.Empty)) return;
+
+            PointCollectionTranslator pointsTranslator = new PointCollectionTranslator();
+            LineCollectionTranslator linesTranslator = new LineCollectionTranslator();
+            PolygonCollectionTranslator polygonsTranslator = new PolygonCollectionTranslator();
+
+            drawingCanvas.Points.Clear();
+            drawingCanvas.Lines.Clear();
+            drawingCanvas.Polygons.Clear();
+
+            foreach (CGUtilities.Point singlePoint in pointsTranslator.Decode(content))
+            {
+                drawingCanvas.Points.Add(singlePoint);
+            }
+            foreach (CGUtilities.Line singleLine in linesTranslator.Decode(content))
+            {
+                drawingCanvas.Lines.Add(singleLine);
+            }
+            foreach (CGUtilities.Polygon singlePolygon in polygonsTranslator.Decode(content))
+            {
+                foreach (CGUtilities.Line singleLine in singlePolygon.lines)
+                {
+                    drawingCanvas.Lines.Add(singleLine);
+                }
+                drawingCanvas.Polygons.Add(singlePolygon);
+            }
+        }
+
+        private void UndoButton_OnClickButton_OnClickButton_Click(object sender, RoutedEventArgs e)
+        {
+            //DrawingCanvas.MementoOriginator.GetStateFromMemento(DrawingCanvas.MementoCareTaker.Pop());
+            //DrawingCanvas previousCanvas = DrawingCanvas.MementoOriginator.GetState();
+            //this.drawingCanvas = previousCanvas.Clone() as DrawingCanvas;
         }
     }
 }

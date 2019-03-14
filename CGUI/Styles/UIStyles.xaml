@@ -12,6 +12,9 @@
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter TargetName="innerRect" Property="Fill" Value="#99000000"/>
             </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter TargetName="innerRect" Property="Fill" Value="#99000000"/>
+            </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 </ResourceDictionary>

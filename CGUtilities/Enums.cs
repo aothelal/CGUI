@@ -20,5 +20,12 @@ namespace CGUtilities
             Outside,
             OnEdge
         }
+
+        public enum InputType
+        {
+            Points,
+            Lines,
+            Polygons
+        }
     }
 }
