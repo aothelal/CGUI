@@ -91,5 +91,47 @@ namespace CGAlgorithmsUnitTest
             convexHullTester = new Incremental();
             Case13();
         }
+		[TestMethod]
+		public void IncrementalTestCase14()
+		{
+			convexHullTester = new Incremental();
+			Case14();
+		}
+		[TestMethod]
+		public void IncrementalTestCase15()
+		{
+			convexHullTester = new Incremental();
+			Case15();
+		}
+		[TestMethod]
+		public void IncrementalTestCase16()
+		{
+			convexHullTester = new Incremental();
+			Case16();
+		}
+		[TestMethod]
+		public void IncrementalTestCase17()
+		{
+			convexHullTester = new Incremental();
+			Case17();
+		}
+		[TestMethod]
+		public void IncrementalTestCase18()
+		{
+			convexHullTester = new Incremental();
+			Case18();
+		}
+		[TestMethod]
+		public void IncrementalTestCase19()
+		{
+			convexHullTester = new Incremental();
+			Case19();
+		}
+		[TestMethod]
+		public void IncrementalTestCase20()
+		{
+			convexHullTester = new Incremental();
+			Case20();
+		}
     }
 }

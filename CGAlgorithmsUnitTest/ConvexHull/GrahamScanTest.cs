@@ -91,5 +91,47 @@ namespace CGAlgorithmsUnitTest
             convexHullTester = new GrahamScan();
             Case13();
         }
+		[TestMethod]
+		public void GrahamScanTestCase14()
+		{
+			convexHullTester = new GrahamScan();
+			Case14();
+		}
+		[TestMethod]
+		public void GrahamScanTestCase15()
+		{
+			convexHullTester = new GrahamScan();
+			Case15();
+		}
+		[TestMethod]
+		public void GrahamScanTestCase16()
+		{
+			convexHullTester = new GrahamScan();
+			Case16();
+		}
+		[TestMethod]
+		public void GrahamScanTestCase17()
+		{
+			convexHullTester = new GrahamScan();
+			Case17();
+		}
+		[TestMethod]
+		public void GrahamScanTestCase18()
+		{
+			convexHullTester = new GrahamScan();
+			Case18();
+		}
+		[TestMethod]
+		public void GrahamScanTestCase19()
+		{
+			convexHullTester = new GrahamScan();
+			Case19();
+		}
+		[TestMethod]
+		public void GrahamScanTestCase20()
+		{
+			convexHullTester = new GrahamScan();
+			Case20();
+		}
     }
 }

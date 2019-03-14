@@ -91,5 +91,47 @@ namespace CGAlgorithmsUnitTest
             convexHullTester = new JarvisMarch();
             Case13();
         }
+		[TestMethod]
+		public void JarvisMarchTestCase14()
+		{
+			convexHullTester = new JarvisMarch();
+			Case14();
+		}
+		[TestMethod]
+		public void JarvisMarchTestCase15()
+		{
+			convexHullTester = new JarvisMarch();
+			Case15();
+		}
+		[TestMethod]
+		public void JarvisMarchTestCase16()
+		{
+			convexHullTester = new JarvisMarch();
+			Case16();
+		}
+		[TestMethod]
+		public void JarvisMarchTestCase17()
+		{
+			convexHullTester = new JarvisMarch();
+			Case17();
+		}
+		[TestMethod]
+		public void JarvisMarchTestCase18()
+		{
+			convexHullTester = new JarvisMarch();
+			Case18();
+		}
+		[TestMethod]
+		public void JarvisMarchTestCase19()
+		{
+			convexHullTester = new JarvisMarch();
+			Case19();
+		}
+		[TestMethod]
+		public void JarvisMarchTestCase20()
+		{
+			convexHullTester = new JarvisMarch();
+			Case20();
+		}
     }
 }

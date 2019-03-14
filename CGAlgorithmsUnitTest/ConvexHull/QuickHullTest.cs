@@ -91,5 +91,47 @@ namespace CGAlgorithmsUnitTest
             convexHullTester = new QuickHull();
             Case13();
         }
+		[TestMethod]
+		public void QuickHullTestCase14()
+		{
+			convexHullTester = new QuickHull();
+			Case14();
+		}
+		[TestMethod]
+		public void QuickHullTestCase15()
+		{
+			convexHullTester = new QuickHull();
+			Case15();
+		}
+		[TestMethod]
+		public void QuickHullTestCase16()
+		{
+			convexHullTester = new QuickHull();
+			Case16();
+		}
+		[TestMethod]
+		public void QuickHullTestCase17()
+		{
+			convexHullTester = new QuickHull();
+			Case17();
+		}
+		[TestMethod]
+		public void QuickHullTestCase18()
+		{
+			convexHullTester = new QuickHull();
+			Case18();
+		}
+		[TestMethod]
+		public void QuickHullTestCase19()
+		{
+			convexHullTester = new QuickHull();
+			Case19();
+		}
+		[TestMethod]
+		public void QuickHullTestCase20()
+		{
+			convexHullTester = new QuickHull();
+			Case20();
+		}
     }
 }

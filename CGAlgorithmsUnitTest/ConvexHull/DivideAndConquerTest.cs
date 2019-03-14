@@ -91,5 +91,47 @@ namespace CGAlgorithmsUnitTest
             convexHullTester = new DivideAndConquer();
             Case13();
         }
+		[TestMethod]
+		public void DivideAndConquerTestCase14()
+		{
+			convexHullTester = new DivideAndConquer();
+			Case14();
+		}
+		[TestMethod]
+		public void DivideAndConquerTestCase15()
+		{
+			convexHullTester = new DivideAndConquer();
+			Case15();
+		}
+		[TestMethod]
+		public void DivideAndConquerTestCase16()
+		{
+			convexHullTester = new DivideAndConquer();
+			Case16();
+		}
+		[TestMethod]
+		public void DivideAndConquerTestCase17()
+		{
+			convexHullTester = new DivideAndConquer();
+			Case17();
+		}
+		[TestMethod]
+		public void DivideAndConquerTestCase18()
+		{
+			convexHullTester = new DivideAndConquer();
+			Case18();
+		}
+		[TestMethod]
+		public void DivideAndConquerTestCase19()
+		{
+			convexHullTester = new DivideAndConquer();
+			Case19();
+		}
+		[TestMethod]
+		public void DivideAndConquerTestCase20()
+		{
+			convexHullTester = new DivideAndConquer();
+			Case20();
+		}
     }
 }
