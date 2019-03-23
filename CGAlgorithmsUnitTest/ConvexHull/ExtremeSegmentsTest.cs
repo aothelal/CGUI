@@ -74,36 +74,6 @@ namespace CGAlgorithmsUnitTest
 			Case10();
 		}
 		[TestMethod]
-		public void ExtremeSegmentsTestCase11()
-		{
-			convexHullTester = new ExtremeSegments();
-			Case11();
-		}
-		[TestMethod]
-		public void ExtremeSegmentsTestCase12()
-		{
-			convexHullTester = new ExtremeSegments();
-			Case12();
-		}
-		[TestMethod]
-		public void ExtremeSegmentsTestCase13()
-		{
-			convexHullTester = new ExtremeSegments();
-			Case13();
-		}
-		[TestMethod]
-		public void ExtremeSegmentsTestCase14()
-		{
-			convexHullTester = new ExtremeSegments();
-			Case14();
-		}
-		[TestMethod]
-		public void ExtremeSegmentsTestCase15()
-		{
-			convexHullTester = new ExtremeSegments();
-			Case15();
-		}
-		[TestMethod]
 		public void ExtremeSegmentsTestCase16()
 		{
 			convexHullTester = new ExtremeSegments();

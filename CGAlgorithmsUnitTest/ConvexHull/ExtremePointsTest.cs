@@ -44,66 +44,6 @@ namespace CGAlgorithmsUnitTest
 			Case5();
 		}
 		[TestMethod]
-		public void ExtremePointsTestCase6()
-		{
-			convexHullTester = new ExtremePoints();
-			Case6();
-		}
-		[TestMethod]
-		public void ExtremePointsTestCase7()
-		{
-			convexHullTester = new ExtremePoints();
-			Case7();
-		}
-		[TestMethod]
-		public void ExtremePointsTestCase8()
-		{
-			convexHullTester = new ExtremePoints();
-			Case8();
-		}
-		[TestMethod]
-		public void ExtremePointsTestCase9()
-		{
-			convexHullTester = new ExtremePoints();
-			Case9();
-		}
-		[TestMethod]
-		public void ExtremePointsTestCase10()
-		{
-			convexHullTester = new ExtremePoints();
-			Case10();
-		}
-		[TestMethod]
-		public void ExtremePointsTestCase11()
-		{
-			convexHullTester = new ExtremePoints();
-			Case11();
-		}
-		[TestMethod]
-		public void ExtremePointsTestCase12()
-		{
-			convexHullTester = new ExtremePoints();
-			Case12();
-		}
-		[TestMethod]
-		public void ExtremePointsTestCase13()
-		{
-			convexHullTester = new ExtremePoints();
-			Case13();
-		}
-		[TestMethod]
-		public void ExtremePointsTestCase14()
-		{
-			convexHullTester = new ExtremePoints();
-			Case14();
-		}
-		[TestMethod]
-		public void ExtremePointsTestCase15()
-		{
-			convexHullTester = new ExtremePoints();
-			Case15();
-		}
-		[TestMethod]
 		public void ExtremePointsTestCase16()
 		{
 			convexHullTester = new ExtremePoints();
