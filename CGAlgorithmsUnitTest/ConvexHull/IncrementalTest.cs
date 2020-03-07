@@ -13,125 +13,66 @@ namespace CGAlgorithmsUnitTest
     [TestClass]
     public class IncrementalTest : ConvexHullTest
     {
-        [TestMethod]
+        [TestMethod, Timeout(1000)]
         public void IncrementalTestCase1()
         {
             convexHullTester = new Incremental();
             Case1();
         }
-        [TestMethod]
+        [TestMethod, Timeout(1000)]
         public void IncrementalTestCase2()
         {
             convexHullTester = new Incremental();
             Case2();
         }
-        [TestMethod]
+        [TestMethod, Timeout(1000)]
         public void IncrementalTestCase3()
         {
             convexHullTester = new Incremental();
             Case3();
         }
-        [TestMethod]
+        [TestMethod, Timeout(1000)]
         public void IncrementalTestCase4()
         {
             convexHullTester = new Incremental();
             Case4();
         }
-        [TestMethod]
-        public void IncrementalTestCase5()
-        {
-            convexHullTester = new Incremental();
-            Case5();
-        }
-        [TestMethod]
-        public void IncrementalTestCase6()
-        {
-            convexHullTester = new Incremental();
-            Case6();
-        }
-        [TestMethod]
-        public void IncrementalTestCase7()
-        {
-            convexHullTester = new Incremental();
-            Case7();
-        }
-        [TestMethod]
+        [TestMethod, Timeout(1000)]
         public void IncrementalTestCase8()
         {
             convexHullTester = new Incremental();
             Case8();
         }
-        [TestMethod]
+        [TestMethod, Timeout(1000)]
         public void IncrementalTestCase9()
         {
             convexHullTester = new Incremental();
             Case9();
         }
-        [TestMethod]
+        [TestMethod, Timeout(1000)]
         public void IncrementalTestCase10()
         {
             convexHullTester = new Incremental();
             Case10();
         }
-        [TestMethod]
+        [TestMethod, Timeout(1000)]
         public void IncrementalTestCase11()
         {
             convexHullTester = new Incremental();
             Case11();
         }
-        [TestMethod]
-        public void IncrementalTestCase12()
+
+        [TestMethod, Timeout(1000)]
+        public void IncrementalSpecialCaseTriangle()
         {
             convexHullTester = new Incremental();
-            Case12();
+            SpecialCaseTriangle();
         }
-        [TestMethod]
-        public void IncrementalTestCase13()
+        [TestMethod, Timeout(1000)]
+        public void IncrementalSpecialCaseConvexPolygon()
         {
             convexHullTester = new Incremental();
-            Case13();
+            SpecialCaseConvexPolygon();
         }
-		[TestMethod]
-		public void IncrementalTestCase14()
-		{
-			convexHullTester = new Incremental();
-			Case14();
-		}
-		[TestMethod]
-		public void IncrementalTestCase15()
-		{
-			convexHullTester = new Incremental();
-			Case15();
-		}
-		[TestMethod]
-		public void IncrementalTestCase16()
-		{
-			convexHullTester = new Incremental();
-			Case16();
-		}
-		[TestMethod]
-		public void IncrementalTestCase17()
-		{
-			convexHullTester = new Incremental();
-			Case17();
-		}
-		[TestMethod]
-		public void IncrementalTestCase18()
-		{
-			convexHullTester = new Incremental();
-			Case18();
-		}
-		[TestMethod]
-		public void IncrementalTestCase19()
-		{
-			convexHullTester = new Incremental();
-			Case19();
-		}
-		[TestMethod]
-		public void IncrementalTestCase20()
-		{
-			convexHullTester = new Incremental();
-			Case20();
-		}
     }
 }
