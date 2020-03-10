@@ -13,90 +13,99 @@ namespace CGAlgorithmsUnitTest
     [TestClass]
     public class DivideAndConquerTest : ConvexHullTest
     {
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerTestCase1()
         {
             convexHullTester = new DivideAndConquer();
             Case1();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerTestCase2()
         {
             convexHullTester = new DivideAndConquer();
             Case2();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerTestCase3()
         {
             convexHullTester = new DivideAndConquer();
             Case3();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerTestCase4()
         {
             convexHullTester = new DivideAndConquer();
             Case4();
         }
-        [TestMethod, Timeout(1000)]
-        public void DivideAndConquerTestCase6()
-        {
-            convexHullTester = new DivideAndConquer();
-            Case6();
-        }
-        [TestMethod, Timeout(1000)]
-        public void DivideAndConquerTestCase7()
-        {
-            convexHullTester = new DivideAndConquer();
-            Case7();
-        }
-        [TestMethod, Timeout(1000)]
+        
+        [TestMethod]
         public void DivideAndConquerTestCase8()
         {
             convexHullTester = new DivideAndConquer();
             Case8();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerTestCase9()
         {
             convexHullTester = new DivideAndConquer();
             Case9();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerTestCase10()
         {
             convexHullTester = new DivideAndConquer();
             Case10();
         }
 
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerSpecialCaseConvexPolygon()
         {
             convexHullTester = new DivideAndConquer();
             SpecialCaseConvexPolygon();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerSpecialCaseTriangle()
         {
             convexHullTester = new DivideAndConquer();
             SpecialCaseTriangle();
         }
-        [TestMethod, Timeout(1000)]
+
+        [TestMethod]
+        public void GrahamScanNormalTestCase1000Points()
+        {
+            convexHullTester = new DivideAndConquer();
+            Case1000Points();
+        }
+        [TestMethod]
+        public void GrahamScanNormalTestCase2000Points()
+        {
+            convexHullTester = new DivideAndConquer();
+            Case2000Points();
+        }
+        [TestMethod]
+        public void GrahamScanNormalTestCase3000Points()
+        {
+            convexHullTester = new DivideAndConquer();
+            Case3000Points();
+        }
+        [TestMethod]
         public void DivideAndConquerNormalTestCase4000Points()
         {
             convexHullTester = new DivideAndConquer();
             Case4000Points();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerNormalTestCase5000Points()
         {
             convexHullTester = new DivideAndConquer();
             Case5000Points();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void DivideAndConquerNormalTestCase10000Points()
         {
             convexHullTester = new DivideAndConquer();
             Case10000Points();
         }
+
     }
 }
