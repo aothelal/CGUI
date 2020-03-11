@@ -13,78 +13,115 @@ namespace CGAlgorithmsUnitTest
     [TestClass]
     public class QuickHullTest : ConvexHullTest
     {
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullTestCase1()
         {
             convexHullTester = new QuickHull();
             Case1();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullTestCase2()
         {
             convexHullTester = new QuickHull();
             Case2();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullTestCase3()
         {
             convexHullTester = new QuickHull();
             Case3();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullTestCase4()
         {
             convexHullTester = new QuickHull();
             Case4();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullTestCase8()
         {
             convexHullTester = new QuickHull();
             Case8();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullTestCase9()
         {
             convexHullTester = new QuickHull();
             Case9();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullNormalTestCase3000Points()
         {
             convexHullTester = new QuickHull();
             Case3000Points();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullNormalTestCase4000Points()
         {
             convexHullTester = new QuickHull();
             Case4000Points();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullNormalTestCase5000Points()
         {
             convexHullTester = new QuickHull();
             Case5000Points();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullNormalTestCase10000Points()
         {
             convexHullTester = new QuickHull();
             Case10000Points();
         }
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullSpecialCaseTriangle()
         {
             convexHullTester = new QuickHull();
             SpecialCaseTriangle();
         }
         
-        [TestMethod, Timeout(1000)]
+        [TestMethod]
         public void QuickHullSpecialCaseConvexPolygon()
         {
             convexHullTester = new QuickHull();
             SpecialCaseConvexPolygon();
+        }
+
+        [TestMethod]
+        public void GrahamScanNormalTestCase1000Points()
+        {
+            convexHullTester = new QuickHull();
+            Case1000Points();
+        }
+        [TestMethod]
+        public void GrahamScanNormalTestCase2000Points()
+        {
+            convexHullTester = new QuickHull();
+            Case2000Points();
+        }
+        [TestMethod]
+        public void GrahamScanNormalTestCase3000Points()
+        {
+            convexHullTester = new QuickHull();
+            Case3000Points();
+        }
+        [TestMethod]
+        public void GrahamScanNormalTestCase4000Points()
+        {
+            convexHullTester = new QuickHull();
+            Case4000Points();
+        }
+        [TestMethod]
+        public void GrahamScanNormalTestCase5000Points()
+        {
+            convexHullTester = new QuickHull();
+            Case5000Points();
+        }
+        [TestMethod]
+        public void GrahamScanNormalTestCase10000Points()
+        {
+            convexHullTester = new QuickHull();
+            Case10000Points();
         }
     }
 }
