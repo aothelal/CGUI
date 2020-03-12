@@ -71,19 +71,19 @@ namespace CGAlgorithmsUnitTest
         }
 
         [TestMethod]
-        public void GrahamScanNormalTestCase1000Points()
+        public void DivideAndConquerNormalTestCase1000Points()
         {
             convexHullTester = new DivideAndConquer();
             Case1000Points();
         }
         [TestMethod]
-        public void GrahamScanNormalTestCase2000Points()
+        public void DivideAndConquerNormalTestCase2000Points()
         {
             convexHullTester = new DivideAndConquer();
             Case2000Points();
         }
         [TestMethod]
-        public void GrahamScanNormalTestCase3000Points()
+        public void DivideAndConquerNormalTestCase3000Points()
         {
             convexHullTester = new DivideAndConquer();
             Case3000Points();

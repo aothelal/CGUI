@@ -63,37 +63,37 @@ namespace CGAlgorithmsUnitTest
         }
 
         [TestMethod]
-        public void GrahamScanNormalTestCase1000Points()
+        public void IncrementalNormalTestCase1000Points()
         {
             convexHullTester = new Incremental();
             Case1000Points();
         }
         [TestMethod]
-        public void GrahamScanNormalTestCase2000Points()
+        public void IncrementalNormalTestCase2000Points()
         {
             convexHullTester = new Incremental();
             Case2000Points();
         }
         [TestMethod]
-        public void GrahamScanNormalTestCase3000Points()
+        public void IncrementalNormalTestCase3000Points()
         {
             convexHullTester = new Incremental();
             Case3000Points();
         }
         [TestMethod]
-        public void GrahamScanNormalTestCase4000Points()
+        public void IncrementalNormalTestCase4000Points()
         {
             convexHullTester = new Incremental();
             Case4000Points();
         }
         [TestMethod]
-        public void GrahamScanNormalTestCase5000Points()
+        public void IncrementalNormalTestCase5000Points()
         {
             convexHullTester = new Incremental();
             Case5000Points();
         }
         [TestMethod]
-        public void GrahamScanNormalTestCase10000Points()
+        public void IncrementalNormalTestCase10000Points()
         {
             convexHullTester = new Incremental();
             Case10000Points();

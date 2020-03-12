@@ -86,42 +86,5 @@ namespace CGAlgorithmsUnitTest
             convexHullTester = new QuickHull();
             SpecialCaseConvexPolygon();
         }
-
-        [TestMethod]
-        public void GrahamScanNormalTestCase1000Points()
-        {
-            convexHullTester = new QuickHull();
-            Case1000Points();
-        }
-        [TestMethod]
-        public void GrahamScanNormalTestCase2000Points()
-        {
-            convexHullTester = new QuickHull();
-            Case2000Points();
-        }
-        [TestMethod]
-        public void GrahamScanNormalTestCase3000Points()
-        {
-            convexHullTester = new QuickHull();
-            Case3000Points();
-        }
-        [TestMethod]
-        public void GrahamScanNormalTestCase4000Points()
-        {
-            convexHullTester = new QuickHull();
-            Case4000Points();
-        }
-        [TestMethod]
-        public void GrahamScanNormalTestCase5000Points()
-        {
-            convexHullTester = new QuickHull();
-            Case5000Points();
-        }
-        [TestMethod]
-        public void GrahamScanNormalTestCase10000Points()
-        {
-            convexHullTester = new QuickHull();
-            Case10000Points();
-        }
     }
 }
